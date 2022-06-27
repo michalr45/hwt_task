@@ -34,7 +34,7 @@ def connect_db(host, user, password, database):
 
 
 def execute_query(connection, query):
-    """executing db manipulating queries, i.e INSERT or UPDATE"""
+    """executing db manipulating queries, e.g. INSERT or UPDATE"""
     cursor = connection.cursor()
     logger.info(f'Executing given query: {query}')
     try:
